@@ -8,7 +8,7 @@
         </CNavLink>
       </CNavItem>
       <CNavItem>
-        <CNavLink :href="url" target="_blank">
+      <CNavLink :onClick="openUrl">
           <CIcon icon="cil-code" class="me-2" />
           Code
         </CNavLink>
@@ -28,15 +28,22 @@ export default {
   props: {
     href: String,
     tabContentClass: String,
+    broken: Boolean
   },
   setup(props) {
     const url = `https://coreui.io/vue/docs/${props.href}`
     const addClass = props.tabContentClass
- 
+
     return {
       addClass,
       url,
     }
   },
+  methods: {
+    openUrl() {
+      if (!this.broken)
+        window.open(this.url, '_blank')
+    }
+  }
 }
 </script>

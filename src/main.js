@@ -7,6 +7,10 @@ import CoreuiVue from '@coreui/vue'
 import CIcon from '@coreui/icons-vue'
 import { iconsSet as icons } from '@/assets/icons'
 import DocsExample from '@/components/DocsExample'
+import { initializeApp } from 'firebase/app'
+import config from "../firebaseConfig"
+
+initializeApp(config)
 
 const app = createApp(App)
 app.use(store)

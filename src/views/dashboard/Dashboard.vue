@@ -19,9 +19,9 @@
                   role="group"
                   aria-label="Basic outlined example"
                 >
-                  <CButton color="secondary" variant="outline">Day</CButton>
+                  <!-- <CButton color="secondary" variant="outline">Day</CButton> -->
                   <CButton color="secondary" variant="outline" active>Month</CButton>
-                  <CButton color="secondary" variant="outline">Year</CButton>
+                  <!-- <CButton color="secondary" variant="outline">Year</CButton> -->
                 </CButtonGroup>
               </CCol>
             </CRow>
