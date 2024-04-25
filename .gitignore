@@ -43,3 +43,6 @@ Thumbs.db
 *.vi
 *.zip
 *~
+
+.firebase
+firebaseConfig.js
