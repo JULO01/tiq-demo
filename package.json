@@ -12,7 +12,7 @@
   "license": "MIT",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
   "scripts": {
-    "dev": "vite --force",
+    "dev": "vite --force --port 4000",
     "build": "vite build",
     "lint": "eslint \"src/**/*.{js,vue}\"",
     "preview": "vite preview"
@@ -39,6 +39,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.24.0",
     "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
     "sass": "^1.72.0",
     "vite": "^5.2.6"
   }
